@@ -6,8 +6,19 @@
     "author": "developer9998",
     "version": "1.1.2",
     "updated": "2026-11-22",
-    "description": "Minecraft In Gorilla Tag ",
+    "description": "Minecraft",
     "tags": [],
     "url": "https://github.com/BRModding/questmods/blob/main/GorillaCraft.dll"
+  },
+  {
+    "name": "Gorilla Shirt",
+    "game": "Gorilla Tag",
+    "category": "PC MODS",
+    "author": "developer9998",
+    "version": "2.4.10",
+    "updated": "2026-11-22",
+    "description": "Custom Shirts",
+    "tags": [],
+    "url": "https://github.com/BRModding/questmods/blob/main/GorillaShirts.dll"
   }
 ]
