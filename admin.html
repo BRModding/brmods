@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex" />
+  <title>Admin · BR Modding</title>
+  <link rel="icon" href="assets/avatar.webp" type="image/webp" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="site-header admin-header">
+    <nav class="nav">
+      <a href="./" class="logo"><img class="logo-pfp" src="assets/avatar.webp" alt="" width="32" height="32" /> BR Modding <span class="muted">/ admin</span></a>
+      <div class="nav-links">
+        <a href="./">View site</a>
+        <button id="logout" class="btn btn-small btn-ghost" hidden>Log out</button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Login -->
+  <main id="login-view" class="login-wrap">
+    <form id="login-form" class="panel login-panel" autocomplete="on">
+      <h1>Admin login</h1>
+      <label>Username
+        <input id="username" name="username" autocomplete="username" required />
+      </label>
+      <label>Password
+        <input id="password" name="password" type="password" autocomplete="current-password" required />
+      </label>
+      <p id="login-error" class="error" role="alert"></p>
+      <button class="btn" type="submit">Log in</button>
+    </form>
+  </main>
+
+  <!-- Dashboard -->
+  <main id="admin-view" class="section" hidden>
+    <div class="admin-top">
+      <h2>Manage mods</h2>
+      <div class="admin-actions">
+        <button id="new-mod" class="btn btn-small">+ Add mod</button>
+        <button id="download" class="btn btn-small btn-ghost">Download mods.json</button>
+        <button id="publish" class="btn btn-small btn-ghost">Publish to GitHub</button>
+      </div>
+    </div>
+    <p id="status" class="muted" role="status"></p>
+
+    <div class="table-wrap">
+      <table class="mod-table">
+        <thead><tr><th>Name</th><th>Game</th><th>Category</th><th>Version</th><th>Updated</th><th></th></tr></thead>
+        <tbody id="mod-rows"></tbody>
+      </table>
+    </div>
+
+    <details class="panel gh-settings">
+      <summary>GitHub publish settings</summary>
+      <p class="muted">Publishing commits <code>mods.json</code> straight to your repository. Use a fine-grained personal access token with <em>Contents: Read and write</em> on this repo only. The token is kept in this browser tab's session and cleared when you close the tab.</p>
+      <div class="form-grid">
+        <label>Owner <input id="gh-owner" placeholder="your-username" /></label>
+        <label>Repository <input id="gh-repo" placeholder="quest-mods-site" /></label>
+        <label>Branch <input id="gh-branch" value="main" /></label>
+        <label>Token <input id="gh-token" type="password" placeholder="github_pat_…" /></label>
+      </div>
+    </details>
+  </main>
+
+  <!-- Edit dialog -->
+  <dialog id="mod-dialog" class="panel">
+    <form id="mod-form" method="dialog">
+      <h2 id="dialog-title">Add mod</h2>
+      <div class="form-grid">
+        <label>Name <input name="name" required /></label>
+        <label>Game <input name="game" list="game-list" required /></label>
+        <label>Category <input name="category" list="category-list" required /></label>
+        <label>Author <input name="author" required /></label>
+        <label>Version <input name="version" placeholder="1.0.0" required /></label>
+        <label>Updated <input name="updated" type="date" /></label>
+        <label class="full">Description <textarea name="description" rows="3" required></textarea></label>
+        <label class="full">Tags (comma separated) <input name="tags" placeholder="qol, ui" /></label>
+        <label class="full">URL <input name="url" type="url" placeholder="https://github.com/…" /></label>
+      </div>
+      <datalist id="game-list"></datalist>
+      <datalist id="category-list"></datalist>
+      <div class="dialog-actions">
+        <button type="button" id="cancel-edit" class="btn btn-small btn-ghost">Cancel</button>
+        <button type="submit" class="btn btn-small">Save</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="assets/admin-config.js"></script>
+  <script src="assets/admin.js"></script>
+</body>
+</html>
