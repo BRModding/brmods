@@ -1,68 +1,13 @@
 [
   {
-    "name": "Example: Mod Library",
+    "name": "Gorilla Craft",
     "game": "Gorilla Tag",
-    "category": "Library",
-    "author": "example-author",
-    "version": "1.0.0",
-    "updated": "2026-11-10",
-    "description": "Example entry. Shared code that other mods need, such as modded-lobby detection. Replace with a real mod and its GitHub link.",
-    "tags": ["required", "dependency"],
-    "url": ""
-  },
-  {
-    "name": "Example: Custom Map Loader",
-    "game": "Gorilla Tag",
-    "category": "Maps",
-    "author": "example-author",
-    "version": "1.4.0",
-    "updated": "2026-11-02",
-    "description": "Example entry. Load community-made maps in modded lobbies.",
-    "tags": ["maps", "modded-lobbies"],
-    "url": ""
-  },
-  {
-    "name": "Example: Monke Hat Pack",
-    "game": "Gorilla Tag",
-    "category": "Cosmetic",
-    "author": "jungle-modder",
-    "version": "2.1.0",
-    "updated": "2026-10-21",
-    "description": "Example entry. Client-side hats and colours that only you can see.",
-    "tags": ["hats", "client-side"],
-    "url": ""
-  },
-  {
-    "name": "Example: In-Game Computer Tweaks",
-    "game": "Gorilla Tag",
-    "category": "Quality of Life",
-    "author": "jungle-modder",
-    "version": "0.8.3",
-    "updated": "2026-11-15",
-    "description": "Example entry. Extra pages and settings on the in-game computer.",
-    "tags": ["ui", "settings"],
-    "url": ""
-  },
-  {
-    "name": "Example: Comfort Vignette",
-    "game": "Gorilla Tag",
-    "category": "Accessibility",
-    "author": "comfy-monke",
-    "version": "1.0.2",
-    "updated": "2026-09-30",
-    "description": "Example entry. Optional vignette while swinging fast, to help with motion sickness. Only affects your own view.",
-    "tags": ["comfort", "client-side"],
-    "url": ""
-  },
-  {
-    "name": "Example: Lobby Music Player",
-    "game": "Gorilla Tag",
-    "category": "Fun",
-    "author": "comfy-monke",
-    "version": "1.2.0",
-    "updated": "2026-11-18",
-    "description": "Example entry. Play your own music in your headset while you play.",
-    "tags": ["music", "client-side"],
-    "url": ""
+    "category": "PC MODS",
+    "author": "developer9998",
+    "version": "1.1.2",
+    "updated": "2026-11-22",
+    "description": "Minecraft In Gorilla Tag ",
+    "tags": [],
+    "url": "https://github.com/BRModding/questmods/blob/main/GorillaCraft.dll"
   }
 ]
